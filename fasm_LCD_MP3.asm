@@ -201,7 +201,7 @@ LCDChars	db		01111000b,10000100b,10001100b,10010100b,10100100b,11000100b,0111100
 			db		00100000b,00010000b,00010000b,00010000b,00010000b,00010000b,00100000b	;) = 40
 			db		00000000b,00000000b,11111100b,00000000b,11111100b,00000000b,00000000b	;= = 41
 			db		00000000b,00000000b,00000000b,11111100b,00000000b,00000000b,00000000b	;- = 42
-			db		01111000b,10000100b,10110100b,11000100b,10110100b,10000100b,01111000b	;© = 43
+			db		01111000b,10000100b,10110100b,11000100b,10110100b,10000100b,01111000b	;Â© = 43
 
 			db		00011000b,00011000b,00011000b,00011000b,00011000b,00000000b,00011000b	;! = 44
 			db		00000000b,00000000b,00000000b,00000000b,00000000b,00000000b,00000000b	;" " = 45
@@ -221,7 +221,7 @@ tDemoText4		db	    "Original LCD CD-Player source copyright (C) 2000 by Thomas B
 tDemoText5		db	    "Musical composition copyright Minster",0
 tmpText 		db	    "TestText",0
 
-tSmallText2		db	"Original CD Player LCD Code © 2000 by Exagone",0
+tSmallText2		db	"Original CD Player LCD Code Â© 2000 by Exagone",0
 ;FileName		 db	     "glimmer.mp3",0
 ;FileName		 db	     "Downhill_Jump.mp3",0
 ;FileName		 db	     "The_Adventure_Lights.ogg",0
@@ -1631,7 +1631,7 @@ local Neg_One: DWORD
 			.endif
 		.endif
 		
-		;.elseif al=="©"
+		;.elseif al=="Â©"
 		;	mov		al, 43
 		;else
 		
